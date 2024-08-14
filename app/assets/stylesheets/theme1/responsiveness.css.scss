@@ -1,0 +1,247 @@
+@media (max-width: 1399px) {
+    .perk-img{
+        width: 70%;
+        margin-top: auto;
+    }
+}
+
+@media (max-width: 1199px) {
+    .perk-img{
+        width: 100%;
+        margin-top: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .service-webdev-div{
+        max-width: 48%;
+    }
+    .job-inner-section{
+        max-width: 49%;
+    }
+    .perk-img{
+        display: none;
+    }
+    .portfolio-img-div{
+        max-width: 48%;
+    }
+    .dropdown-menu{
+        border: none;
+        margin-left: 30px;
+    }
+    .service-div > div{
+        min-width: fit-content;
+    }
+    .header-section video{
+        height: 70vh;
+    }
+    .header-content-bold{
+        font-size: 36px;
+    }
+    .team-div{
+        min-width: 40%;
+        flex: 1;
+    }
+    .inner-team-section{
+        flex-wrap: wrap;
+    }
+    .index-team-section .team-div:nth-child(3),
+    .index-team-section .team-div:nth-child(4){
+        display: none;
+    }
+    .review-section,
+    .goal-section{
+        padding-inline: 12px;
+    }
+    .logo{
+        height: 50px;
+    }
+    .header-section .nav-link{
+        padding-inline: 0px !important;
+    }
+    .header-section .navbar-toggler{
+        border: none;
+        padding: 0;
+    }
+    .header-section .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    .header-section .navbar-collapse.show{
+        padding-top: 10px;
+    }
+    .header-section .carousel-caption h5{
+        font-size: 100px;
+    }
+    .header-section .carousel-item img{
+        height: 600px;
+    }
+    .header-section .carousel-caption{
+        padding-inline: 15px;
+    }
+    .about-section > img{
+        width: 500px;
+    }
+    .about-section .heading-text{
+        font-size: 32px;
+    }
+    .about-section .about-img{
+        margin-top: 24px;
+        max-height: 500px;
+    }
+    .about-section .about-img-2{
+        max-width: 350px;
+        max-height: 350px;
+        aspect-ratio: 1 / 1;
+    }
+    .nav-item.dropdown:hover .mobile-dropdown-1{
+        display: none;
+    }
+
+    .nav-item.dropdown:hover .mobile-dropdown-2{
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .portfolio-img-div{
+        max-width: 100%;
+    }
+    .service-webdev-div{
+        max-width: 100%;
+    }
+    .apply-modal-form{
+        max-width: 90%;
+    }
+    .market-text{
+        border-right: none;
+    }
+    .service-div > div p:first-child{
+        font-size: 18px;
+    }
+    .about-section .about-img{
+        height: unset;
+    }
+    .service-div > div img{
+        width: 100px;
+    }
+    .about-header-content,
+    .career-header-content,
+    .portfolio-header-content{
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 1.3;
+    }
+    .technology-icon{
+        width: 70px !important;
+    }
+    .row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .header-section video{
+        height: 40vh;
+    }
+    .header-content{
+        font-size: 20px;
+    }
+    .service-content{
+        padding: 10px 10px 10px 5px;
+    }
+    .heading-text{
+        font-size: 24px;
+    }
+    .container{
+        padding-inline: 12px;
+    }
+    .header-content-bold{
+        font-size: 24px;
+    }
+    .about-section{
+        padding: 50px 12px 0px;
+    }
+    .about-content{
+        padding: 0;
+    }
+    .quality-section > div {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .market-content{
+        padding: 0;
+    }
+    .about-section .about-img{
+        max-width: 100%;
+        aspect-ratio: unset;
+    }
+    .right-about-section{
+        margin-top: 30px;
+    }
+    .about-section .about-img-2{
+        display: none;
+    }
+    .header-section .carousel-caption h5{
+        font-size: 40px;
+    }
+    .header-section .carousel-item img{
+        height: 400px;
+    }
+    .about-section > img{
+        width: 300px;
+    }
+    .about-section .heading-text{
+        font-size: 24px;
+    }
+    .about-section .col-lg-6 p.primary-color{
+        font-size: 13px;
+    }
+    .about-section .about-icon{
+        width: 30px;
+        height: 30px;
+        border-radius: 0px;
+    }
+    .header-section .carousel-caption p{
+        font-size: 14px;
+    }
+    .custom-btn{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 485px){
+    .team-div{
+        min-width: 47%;
+        flex: 1;
+    }
+    .team-div img{
+        height: 160px !important;
+    }
+    .job-inner-section{
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 576px){
+    .custom-container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px){
+    .custom-container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px){
+    .custom-container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px){
+    .custom-container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1400px){
+    .custom-container {
+        max-width: 1320px;
+    }
+}

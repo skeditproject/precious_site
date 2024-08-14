@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Precious Site</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8" />
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <!-- Application Stylesheets -->
+    <%= stylesheet_link_tag 'application.theme1', 'data-turbo-track': 'reload' %>
+    
+    <!-- External Stylesheets -->
+    <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css',
+      integrity: 'sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==',
+      crossorigin: 'anonymous', referrerpolicy: 'no-referrer' %>
+    <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css' %>
+    <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css' %>
+
+    <!-- JavaScript -->
+    <%= javascript_include_tag 'https://code.jquery.com/jquery-3.6.0.min.js' %>
+    <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' %>
+    <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js',
+      integrity: 'sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==',
+      crossorigin: 'anonymous', referrerpolicy: 'no-referrer' %>
+    <%= javascript_include_tag "application.theme1", 'data-turbo-track': 'reload' %>
+
+    <script>
+      new WOW().init();
+    </script>
+  </head>
+
+  <body>
+    <%= render 'common/theme1/navbar' %>
+    <%= yield %>
+    <%= render 'common/theme1/footer' %>
+  </body>
+</html>

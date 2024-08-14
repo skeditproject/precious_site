@@ -1,0 +1,57 @@
+<nav class="navbar-section navbar navbar-expand-lg position-sticky bg-white top-0 w-100 py-2">
+  <div class="container">
+      <a class="navbar-brand me-0 py-0" href="#">
+        <%= image_tag 'theme1/logo/precious-landscape-logo.png', class: "logo", alt: '' %>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mt-4 mt-lg-0 mb-lg-0 d-flex gap-lg-4 align-items-lg-center">
+              <li class="nav-item">
+                  <%= link_to 'Home', root_path, class: "nav-link secondary-color active", aria_current: "page" %>
+              </li>
+              <li class="nav-item dropdown">
+                  <div class=" d-flex align-items-center gap-1">
+                    <%= link_to 'Services', theme1_home_services_path, class: "nav-link secondary-color" %>
+                      <i class="fa-solid fa-caret-down" onclick=mobileDropdownFirstOpen();></i>
+                  </div>
+                  <ul class="dropdown-menu mobile-dropdown-1" id="dropdownOne">
+                      <li>
+                        <%= link_to 'Web Development', theme1_home_service_detail_path('web-development'), class: 'dropdown-item' %>
+                      </li>
+                      <li>
+                        <%= link_to 'App Development', theme1_home_service_detail_path('app-development'), class: 'dropdown-item' %>
+                      </li>
+                      <li>
+                        <%= link_to 'Graphic & UI/UX Design', theme1_home_service_detail_path('ui-ux-design'), class: 'dropdown-item' %>
+                      </li>
+                      <li>
+                        <%= link_to 'Digital Marketing', theme1_home_service_detail_path('digital-marketing'), class: 'dropdown-item' %>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <div class="d-flex align-items-center gap-1">
+                      <%= link_to 'Hire Us', theme1_home_hire_us_path, class: 'nav-link secondary-color' %>
+                      <i class="fa-solid fa-caret-down" onclick=mobileDropdownTwoOpen();></i>
+                  </div>
+                  <ul class="dropdown-menu mobile-dropdown-2" id="dropdownTwo">
+                      <li><%= link_to 'Hire React Developer', theme1_home_hire_us_path, class: 'dropdown-item' %></li>
+                      <li><%= link_to 'Hire Ror Developer', theme1_home_hire_us_path, class: 'dropdown-item' %></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'Portfolio', theme1_home_portfolio_path, class: 'nav-link secondary-color' %>
+              </li>        
+              <li class="nav-item">
+                <%= link_to 'Careers', theme1_home_career_path, class: 'nav-link secondary-color' %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'About', theme1_home_about_path, class: 'nav-link secondary-color' %>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>

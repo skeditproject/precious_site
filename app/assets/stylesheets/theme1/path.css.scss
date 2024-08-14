@@ -1,0 +1,112 @@
+.feature-section{
+    background-image: url("theme1/feature-2.png");
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.service-detail-section{
+    background-image: url("theme1/portfolio-head.png");
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.tech-detail-section{
+    background-image: url("theme1/react-bg.png");
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.owl-carousel-technology .item {
+    text-align: center;
+    color: white;
+    background-image: url('theme1/icon-shape-6.png');
+    background-color: white;
+    background-size: cover;
+    height: 176px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+}
+
+.success-section .container{
+    padding: 100px 0;
+    background-image: url('theme1/success-bg.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about-page-header{
+    padding: 100px 12px;
+    background-image: url('theme1/about-head.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+
+}
+
+.career-page-header{
+    padding: 100px 12px;
+    background-image: url('theme1/career-head.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+
+}
+
+.portfolio-page-header{
+    padding: 100px 12px;
+    background-image: url('theme1/portfolio-head.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+
+}
+
+.service-page-header{
+    padding: 100px 12px;
+    background-image: url('theme1/service-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.hire-page-header{
+    padding: 100px 12px;
+    background-image: url('theme1/hire-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.webdev-page-header{
+    padding: 100px 12px;
+    background-image: url('theme1/web-dev.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.react-header{
+    padding: 100px 12px;
+    background-image: url('theme1/react-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+
+}
