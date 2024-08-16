@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   root "theme1/home#home"
   namespace :theme1, path: '', as: 'theme1_home', controller: 'home' do
     get 'about'
-    # get 'contact'
+    get 'contact'
+    get 'faq'
     # get 'our_process'
     get 'services'
     # get 'service_detail'
@@ -20,8 +21,9 @@ Rails.application.routes.draw do
     get 'portfolio'
     # get 'life_at_skedgroup'
     # get 'terms_and_condition'
-    # get 'privacy_policy'
+    get 'privacy_policy'
     # post 'personalized_contact'
     # post 'subscribes'
+    get 'technology/:language', to: 'home#technology', as: 'technology'
   end
 end

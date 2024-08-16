@@ -22,4 +22,13 @@ class Theme1::HomeController < ApplicationController
 
   def about
   end
+  def contact
+  end
+
+  def faq
+  end
+
+  def technology
+    @language = params[:language]
+  end
 end

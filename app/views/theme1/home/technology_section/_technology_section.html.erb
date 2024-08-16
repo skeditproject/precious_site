@@ -10,10 +10,8 @@
                 </p>
                 <div class="d-flex flex-sm-row flex-column w-100 gap-5 gap-sm-3">
                     <div class="owl-carousel owl-carousel-technology owl-theme d-flex wow animated slideInUp">
-                    <!-- <div class="owl-carousel owl-carousel-technology owl-theme d-flex" style="background-image: url('<%= asset_path('theme1/icon-shape-6.png') %>');"> -->
-                        <div class="item position-relative">
+                        <!-- <div class="item position-relative">
                             <a href="">
-                                <%# <img src="assets/images/reactjs.png" style="object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;" alt=""> %>
                                 <%= image_tag 'theme1/reactjs.png', style: "object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;", alt: '' %>
                             </a>
                             <a href="" class="d-block text-decoration-none text-dark fs-5 fw-bold">
@@ -22,7 +20,18 @@
                             <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
                                 Lorem ipsum dolor
                             </p>
-                        </div>
+                        </div> -->
+                        <div class="item position-relative">
+                            <a href="<%= theme1_home_technology_path(language: 'reactjs') %>">
+                              <%= image_tag 'theme1/reactjs.png', style: "object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;", alt: 'React Js' %>
+                            </a>
+                            <a href="<%= theme1_home_technology_path(language: 'reactjs') %>" class="d-block text-decoration-none text-dark fs-5 fw-bold">
+                              React Js
+                            </a>
+                            <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
+                              Lorem ipsum dolor
+                            </p>
+                          </div>                          
                         <div class="item position-relative">
                             <a href="">
                                 <%= image_tag 'theme1/nodejs.png', style: "object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;", alt: '' %>

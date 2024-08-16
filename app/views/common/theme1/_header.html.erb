@@ -8,6 +8,8 @@
             <p class="header-content-bold mt-3 wow animated slideInUp">
                 Lorem ipsum dolor sit amet consectetur
             </p>
-            <button class="custom-btn mt-5 wow animated slideInUp">Contact us</button>
+            <%= button_to 'Contact us', theme1_home_contact_path, 
+            class: 'custom-btn mt-5 wow animated slideInUp', 
+            method: :get %>
         </div>
 </header>

@@ -1,0 +1,10 @@
+<% case @language %>
+<% when 'reactjs' %>
+  <%= render 'theme1/home/technology_section/reactjs' %>
+<% when 'nodejs' %>
+  <%= render 'theme1/home/technology_section/nodejs' %>
+<% when 'java' %>
+  <%= render 'theme1/home/technology_section/php' %>
+<% else %>
+  <p>Technology not found</p>
+<% end %>

@@ -27,21 +27,21 @@
             <div class="col-lg-3 col-md-4 footer-links mt-3 mt-md-0">
                 <p>Quick Links</p>
                 <ul>
-                    <li><a href=""> Industries we serve </a></li>
-                    <li><a href=""> Blogs </a></li>
-                    <li><a href=""> Portfolio </a></li>
-                    <li><a href=""> Privacy Policy </a></li>
-                    <li><a href=""> FAQ </a></li>
+                  <li><%= link_to 'Industries we serve', theme1_home_services_path %></li>
+                  <li><a href=""> Blogs </a></li>
+                  <li><%= link_to 'Portfolio', theme1_home_portfolio_path %></li>
+                  <li><%= link_to 'Privacy Policy', theme1_home_privacy_policy_path %></li>
+                  <li><%= link_to 'FAQ', theme1_home_faq_path %></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-4 footer-links">
                 <p>Services</p>
                 <ul>
-                    <li><a href=""> Website Development </a></li>
-                    <li><a href=""> Mobile App Development </a></li>
-                    <li><a href=""> UI/UX Design </a></li>
-                    <li><a href=""> Digital Marketing </a></li>
-                    <li><a href=""> IT Consultant </a></li>
+                    <li><%= link_to 'Website Development', theme1_home_service_detail_path('web-development') %></li>
+                    <li><%= link_to 'Mobile App Development', theme1_home_service_detail_path('mobile-app-development') %></li>
+                    <li><%= link_to 'UI/UX Design', theme1_home_service_detail_path('ui-ux-design') %></li>
+                    <li><%= link_to 'Digital Marketing', theme1_home_service_detail_path('digital-marketing') %></li>
+                    <li><%= link_to 'IT Consultant', theme1_home_service_detail_path('it-consultant') %></li>
                 </ul>
             </div>
             <div class="col-lg-2 col-md-4 footer-links">
