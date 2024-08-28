@@ -1,0 +1,66 @@
+<section class="ct-job-details-section py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+        <!-- Job Title and Experience -->
+        <div class="mb-4 wow animated zoomIn">
+          <h2 class="primary-color font-weight-bold"><%= @api_data["title"] %></h2>
+          <p class="text-muted">
+            <strong>Experience:</strong> <%= @api_data["experience"] %> years in
+            <%= @api_data["technology"] %>
+          </p>
+        </div>
+
+        <!-- Description -->
+        <p class="lead text-dark wow animated zoomIn" style="font-weight: bold; font-size: 1.0rem; line-height: 1.5; letter-spacing: 0.5px; color: #343a40;">
+          Embark on a journey where your communication prowess, technical expertise, and unwavering sense of responsibility meet our precise requirements.
+        </p>
+
+        <!-- Qualifications -->
+        <div class="mt-5 wow animated slideInLeft">
+          <h5 class="primary-color">Qualifications</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-light">
+              <p class="mb-0"><i class="bi bi-check-circle-fill text-success me-2"></i><%= @api_data["qualifications"] %></p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Communication -->
+        <div class="mt-4 wow animated slideInRight">
+          <h5 class="primary-color">Communication</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-light">
+              <p class="mb-0"><i class="bi bi-check-circle-fill text-success me-2"></i><%= @api_data["communication"] %></p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Skills -->
+        <div class="mt-4 wow animated slideInLeft">
+          <h5 class="primary-color">Skills</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-light">
+              <p class="mb-0"><i class="bi bi-check-circle-fill text-success me-2"></i><%= @api_data["skills"] %></p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Roles & Responsibilities -->
+        <div class="mt-4 wow animated slideInRight">
+          <h5 class="primary-color">Roles & Responsibilities</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-light">
+              <p class="mb-0"><i class="bi bi-check-circle-fill text-success me-2"></i><%= @api_data["responsibilities"] %></p>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center mt-5 wow animated zoomIn">
+          <%= button_to theme1_home_apply_for_job_path(job_id: @api_data["id"]), method: :get, class: "custom-btn wow animated zoomIn" do %>
+            Apply for the Job
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

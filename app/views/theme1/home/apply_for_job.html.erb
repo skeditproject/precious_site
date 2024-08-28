@@ -1,0 +1,121 @@
+<%= form_with(url: theme1_home_submit_application_path, local: true, html: { class: "needs-validation", novalidate: true, multipart: true }) do |form| %>
+  <div class="container mt-5 mb-5 p-4 rounded shadow-lg bg-light">
+    
+    <!-- Display flash messages -->
+    <% if flash[:error].present? %>
+      <div class="alert alert-danger">
+        <%= flash[:error] %>
+      </div>
+    <% end %>
+
+    <!-- Vacancy ID -->
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <%= label_tag :vacancy_id, "Vacancy", class: "form-label fw-bold" %>
+        <%= select_tag :vacancy_id,
+          options_for_select(@vacancies&.map { |vacancy| [vacancy["title"], vacancy["id"]] } || []),
+          class: "form-control #{'is-invalid' if @errors&.fetch(:vacancy_id, false)}",
+          prompt: "Select a Vacancy" %>
+      </div>
+
+      <div class="col-md-6">
+        <%= label_tag :resume, "Upload Resume", class: "form-label fw-bold" %>
+        <%= file_field_tag :resume, class: "form-control #{'is-invalid' if @errors&.fetch(:resume, false)}", accept: ".pdf,.doc,.docx" %>
+      </div>
+    </div>
+
+    <!-- Personal Information -->
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <%= label_tag :first_name, "First Name", class: "form-label fw-bold" %>
+        <%= text_field_tag :first_name, nil, class: "form-control #{'is-invalid' if @errors&.fetch(:first_name, false)}", required: true %>
+      </div>
+      <div class="col-md-6">
+        <%= label_tag :last_name, "Last Name", class: "form-label fw-bold" %>
+        <%= text_field_tag :last_name, nil, class: "form-control #{'is-invalid' if @errors&.fetch(:last_name, false)}", required: true %>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <%= label_tag :email, "Email", class: "form-label fw-bold" %>
+        <%= email_field_tag :email, nil, class: "form-control #{'is-invalid' if @errors&.fetch(:email, false)}", required: true %>
+      </div>
+      <div class="col-md-6">
+        <%= label_tag :phone, "Phone", class: "form-label fw-bold" %>
+        <%= text_field_tag :phone, nil, class: "form-control #{'is-invalid' if @errors&.fetch(:phone, false)}", required: true %>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <%= label_tag :date_of_birth, "Date of Birth", class: "form-label fw-bold" %>
+        <%= date_field_tag :date_of_birth, nil, class: "form-control #{'is-invalid' if @errors&.fetch(:date_of_birth, false)}" %>
+      </div>
+      <div class="col-md-6">
+        <%= label_tag :gender, "Gender", class: "form-label fw-bold" %>
+        <%= select_tag :gender, options_for_select(["male", "female"]), class: "form-control #{'is-invalid' if @errors&.fetch(:gender, false)}" %>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <%= label_tag :current_location, "Current Location", class: "form-label fw-bold" %>
+        <%= text_field_tag :current_location, nil, class: "form-control #{'is-invalid' if @errors&.fetch(:current_location, false)}" %>
+      </div>
+      <div class="col-md-6">
+        <%= label_tag :permanent_location, "Permanent Location", class: "form-label fw-bold" %>
+        <%= text_field_tag :permanent_location, nil, class: "form-control #{'is-invalid' if @errors&.fetch(:permanent_location, false)}" %>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <%= label_tag :marital_status, "Marital Status", class: "form-label fw-bold" %>
+        <%= select_tag :marital_status, options_for_select(["single", "married"]), class: "form-control #{'is-invalid' if @errors&.fetch(:marital_status, false)}" %>
+      </div>
+      <div class="col-md-4">
+        <%= label_tag :relevant_experience, "Relevant Experience", class: "form-label fw-bold" %>
+        <%= text_field_tag :relevant_experience, nil, class: "form-control #{'is-invalid' if @errors&.fetch(:relevant_experience, false)}" %>
+      </div>
+      <div class="col-md-4">
+        <%= label_tag :total_experience, "Total Experience", class: "form-label fw-bold" %>
+        <%= text_field_tag :total_experience, nil, class: "form-control #{'is-invalid' if @errors&.fetch(:total_experience, false)}" %>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <%= label_tag :current_ctc, "Current CTC", class: "form-label fw-bold" %>
+        <%= text_field_tag :current_ctc, nil, class: "form-control #{'is-invalid' if @errors&.fetch(:current_ctc, false)}" %>
+      </div>
+      <div class="col-md-4">
+        <%= label_tag :expected_ctc, "Expected CTC", class: "form-label fw-bold" %>
+        <%= text_field_tag :expected_ctc, nil, class: "form-control #{'is-invalid' if @errors&.fetch(:expected_ctc, false)}" %>
+      </div>
+      <div class="col-md-4">
+        <%= label_tag :notice_period, "Notice Period", class: "form-label fw-bold" %>
+        <%= text_field_tag :notice_period, nil, class: "form-control #{'is-invalid' if @errors&.fetch(:notice_period, false)}" %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-center">
+        <%= form.submit "Submit", class: "custom-btn wow animated zoomIn" %>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+<div id="apply-job-modal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Apply for Job</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      </div>
+    </div>
+  </div>
+</div>

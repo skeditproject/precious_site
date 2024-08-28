@@ -70,3 +70,22 @@ function mobileDropdownTwoOpen() {
       y.style.display = "none";
     }
 }
+
+function redirectToCareerDetail(jobId) {
+    const url = `/career_detail/${jobId}`;
+    window.location.href = url;
+}
+
+function applyForJob(jobId) {
+    $.ajax({
+      url: '/theme1/home/apply_for_job',
+      type: 'GET',
+      data: { job_id: jobId },
+      dataType: 'script',
+      success: function() {
+      },
+      error: function(xhr, status, error) {
+        console.error('AJAX Error: ', status, error);
+      }
+    });
+  }

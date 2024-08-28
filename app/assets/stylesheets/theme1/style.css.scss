@@ -1147,3 +1147,22 @@ a:hover{
     margin-left: 5px;
     color: var(--color-light);
 }
+
+.card {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .job-heading {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .card:hover .job-heading {
+    background-color:  var(--color-light);
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+  }
