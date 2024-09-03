@@ -69,5 +69,5 @@ test:
 production:
   <<: *default
   database: precious_site_production
-  username: precious_site
-  password: <%= ENV["PRECIOUS_SITE_DATABASE_PASSWORD"] %>
+  username: <%= ENV["PRECIOUS_DATABASE_USERNAME"] %>
+  password: <%= ENV["PRECIOUS_DATABASE_PASSWORD"] %>

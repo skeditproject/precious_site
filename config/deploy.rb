@@ -3,7 +3,7 @@ lock "~> 3.19.1"
 
 # require 'capistrano-db-tasks'
 
-set :repo_url,        ''
+set :repo_url,        'https://github.com/skeditproject/precious_site'
 set :application,     'precious_site'
 set :user,            'deploy'
 set :puma_threads,    [4, 16]
