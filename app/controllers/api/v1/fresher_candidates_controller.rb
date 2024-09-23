@@ -1,4 +1,4 @@
-class FresherCandidatesController < ApplicationController
+class Api::V1::FresherCandidatesController < ApplicationController
   layout "active_employee"
 
   def new
