@@ -3,7 +3,7 @@ class Theme1::HomeController < ApplicationController
 
   before_action :fetch_job_details, only: [:career_detail]
   before_action :fetch_experience_candidate_form, only: [:apply_for_job]
-  before_action :set_vacancies, only: [:career, :apply_for_job]
+  # before_action :set_vacancies, only: [:career, :apply_for_job]
 
   def home; end
   def services; end
@@ -50,11 +50,19 @@ class Theme1::HomeController < ApplicationController
 
   def set_vacancies
     @vacancies = fetch_api_data('vacancies') || []
+    if @vacancies.nil? || @vacancies.empty?
+      flash[:error] = "No vacancies available."
+    end
   end
 
   def fetch_api_data(endpoint)
     response = HTTParty.get(api_url(endpoint))
-    response.success? ? response.parsed_response : nil
+    Rails.logger.info "API Response for #{endpoint}: #{response.body}"
+    if response.success?
+      response.parsed_response || []
+    else
+      []
+    end
   end
 
   def fetch_job_details

@@ -3,32 +3,32 @@
     Available <span class="primary-color">Jobs</span>
   </p>
   <div class="row justify-content-center g-4">
-    <% @vacancies.each do |job| %>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow animated slideInLeft">
-        <div class="card h-100 shadow border-0">
-          <div class="card-body d-flex flex-column justify-content-between p-4">
-            <h5 class="job-heading text-center mb-3">
-              <%= job["title"] %>
-            </h5>
-            <ul class="list-unstyled">
-              <li class="text-center mb-4">
-                <strong class="text-secondary">Vacancy:</strong> 
-                <span class="text-dark"><%= job["job_opening"] %></span>
-              </li>
-              <li class="text-center mb-4">
-                <strong class="text-secondary">Skills:</strong> 
-                <span class="text-dark"><%= job["skills"] %></span>
-              </li>
-              <li class="d-flex justify-content-center">
-                <button class="custom-btn wow animated zoomIn" onclick="redirectToCareerDetail('<%= job["id"] %>')">
-                  View Role
-                </button>
-              </li>
-            </ul>
+      <% @vacancies&.each do |job| %>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow animated slideInLeft">
+          <div class="card h-100 shadow border-0">
+            <div class="card-body d-flex flex-column justify-content-between p-4">
+              <h5 class="job-heading text-center mb-3">
+                <%= job["title"] %>
+              </h5>
+              <ul class="list-unstyled">
+                <li class="text-center mb-4">
+                  <strong class="text-secondary">Vacancy:</strong> 
+                  <span class="text-dark"><%= job["job_opening"] %></span>
+                </li>
+                <li class="text-center mb-4">
+                  <strong class="text-secondary">Skills:</strong> 
+                  <span class="text-dark"><%= job["skills"] %></span>
+                </li>
+                <li class="d-flex justify-content-center">
+                  <button class="custom-btn wow animated zoomIn" onclick="redirectToCareerDetail('<%= job["id"] %>')">
+                    View Role
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
   </div>
 </section>
 
