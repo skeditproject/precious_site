@@ -42,8 +42,12 @@ body {
     color: #878787;
 }
 
+a{
+    transition: all 100ms linear;
+}
+
 a:hover{
-    color: var(--color-light);
+    color: var(--color-light) !important;
 }
 
 .bg-primary-color{
@@ -219,7 +223,7 @@ a:hover{
 
 .navbar-section .dropdown-item:focus,
 .navbar-section .dropdown-item:hover{
-    color: white;
+    color: white !important;
     background-color: var(--color-light);
     border-radius: 5px;
 }
@@ -365,6 +369,7 @@ a:hover{
 .service-div > div {
     flex: 1;
     min-width: 32%;
+    max-width: 49%;
     width: 100%;
     box-shadow: 0px 0px 5px #00000010;
     border-radius: 8px;
@@ -384,6 +389,46 @@ a:hover{
     width: 124px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.blog-service-div > div img {
+    width: 100% !important;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.blog-service-div .mt-3{
+    color: #777777;
+    font-weight: 600;
+    border: 1px solid #777777;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.blog-service-div .mt-3:hover{
+    border: 1px solid var(--color-light);
+}
+
+.blog-time{
+    color: lightgray;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.page-link{
+    color: #ff530e;
+    padding-block: 8px;
+}
+
+.blog-content{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    font-size: 14px;
+    color: gray;
+    line-height: 1.25;
 }
 
 .service-div > div p:first-child{
@@ -692,6 +737,10 @@ a:hover{
 
 .portfolio-section .nav-item{
     height: 32px;
+}
+
+.nav-item svg{
+    color: var(--color-dark);
 }
 
 .nav-item.dropdown:hover{
@@ -1147,22 +1196,3 @@ a:hover{
     margin-left: 5px;
     color: var(--color-light);
 }
-
-.card {
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-
-  .card:hover {
-    transform: scale(1.05);
-  }
-
-  .job-heading {
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-
-  .card:hover .job-heading {
-    background-color:  var(--color-light);
-    color: white;
-    padding: 5px;
-    border-radius: 2px;
-  }

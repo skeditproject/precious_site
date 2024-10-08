@@ -1,0 +1,56 @@
+<header class="header-section d-flex justify-content-center align-items-center position-relative blog-page-header">
+  <div class="overlay wow animated zoomIn"></div>
+  <p class="about-header-content wow animated zoomIn">Our Blogs</p>
+</header>
+
+<section class="service-section position-relative" id="servicepart">
+  <%= image_tag 'theme1/dot-shape-right-top.png', class: "position-absolute top-0 end-0", style: "z-index: -1; opacity: 0.4", alt: "" %>
+  <div class="container mx-auto mb-3 mb-md-5 pt-5 pb-5">
+    <p class="heading-text text-center mt-3 mt-md-5 mb-4 wow animated zoomIn">
+      Our Latest <span class="primary-color">Insights</span> and <span class="primary-color">Industry</span> Trends
+    </p>
+    <p class="text-center my-3 wow animated zoomIn" style="max-width: 750px; margin: auto; line-height: 1.4; font-size: 14px;">
+      At Precious Infosystem, we strive to provide valuable insights on cutting-edge technologies, business strategies, and industry innovations. Our blog is a hub for informative articles, case studies, and tips designed to help you stay ahead of the curve. Whether you're looking for expert opinions on web development, app creation, digital marketing, or UI/UX design, our blog delivers it all. Explore our collection and empower your digital transformation journey!
+    </p>
+    <div class="service-div blog-service-div mt-5">
+      <% blogs = [
+        { title: "Web Development", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path },
+        { title: "Android Development", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path },
+        { title: "Cloud Services", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path },
+        { title: "UI/UX Design", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path },
+        { title: "IT Consulting", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path },
+        { title: "Digital Marketing", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path }
+      ] %>
+      <% blogs.each do |blog| %>
+        <div class="d-flex gap-1 flex-column gap-sm-2 bg-white wow animated slideInUp">
+          <%= link_to image_tag(blog[:img], alt: "", height: "100%"), blog[:path] %>
+          <div class="service-content">
+            <div class="blog-time">
+              <%= blog[:date] %>
+            </div>
+            <%= link_to blog[:title], blog[:path], class: "text-decoration-none mb-2", style: "font-size: 18px; font-weight: 600; color: black; text-align: start;" %>
+            <p style="font-weight: 400;" class="blog-content">
+              <%= blog[:content] %>
+            </p>
+            <%= link_to "Read More", blog[:path], class: "mt-3" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <nav aria-label="Page navigation" class="d-flex justify-content-center mt-5 wow animated slideInUp">
+      <ul class="pagination mb-0">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Pre</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">.</a></li>
+        <li class="page-item"><a class="page-link" href="#">.</a></li>
+        <li class="page-item"><a class="page-link" href="#">15</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>

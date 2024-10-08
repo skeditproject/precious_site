@@ -13,6 +13,10 @@ class Theme1::HomeController < ApplicationController
   def contact; end
   def faq; end
 
+  def blogs; end
+
+  def blog_details; end
+
   def technology
     @language = params[:language]
   end
@@ -31,6 +35,7 @@ class Theme1::HomeController < ApplicationController
       format.js
     end
   end
+
 
   def submit_application
     response = HTTParty.post(
