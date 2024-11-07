@@ -1,4 +1,14 @@
-<%= render 'theme1/home/services_detail_body/banner' %>
-<%= render 'theme1/home/services_detail_body/service_detail_tab_content' %>
-<%= render 'theme1/home/services_detail_body/our_service' %>
-<%= render 'theme1/home/services_detail_body/faq' %>
+<div class="service-detail-content">
+  <% case @tab %>
+  <% when 'web-development' %>
+    <%= render 'theme1/home/services_detail_body/web_development' %>
+  <% when 'app-development' %>
+    <%= render 'theme1/home/services_detail_body/app_development' %>
+  <% when 'ui-ux-design' %>
+    <%= render 'theme1/home/services_detail_body/ui_ux_design' %>
+  <% when 'digital-marketing' %>
+    <%= render 'theme1/home/services_detail_body/digital_marketing' %>
+  <% else %>
+    <%= render 'theme1/home/services_detail_body/web_development' %>
+  <% end %>
+</div>

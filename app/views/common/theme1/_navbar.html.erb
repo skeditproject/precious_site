@@ -35,12 +35,7 @@
               <li class="nav-item dropdown">
                   <div class="d-flex align-items-center gap-1">
                       <%= link_to 'Hire Us', theme1_home_hire_us_path, class: "nav-link secondary-color #{'active' if current_page?(theme1_home_hire_us_path)}" %>
-                      <i class="fa-solid fa-caret-down" onclick=mobileDropdownTwoOpen();></i>
                   </div>
-                  <ul class="dropdown-menu mobile-dropdown-2" id="dropdownTwo">
-                      <li><%= link_to 'Hire React Developer', theme1_home_hire_us_path, class: 'dropdown-item' %></li>
-                      <li><%= link_to 'Hire Ror Developer', theme1_home_hire_us_path, class: 'dropdown-item' %></li>
-                  </ul>
               </li>
               <li class="nav-item">
                 <%= link_to 'Portfolio', theme1_home_portfolio_path, class: "nav-link secondary-color #{'active' if current_page?(theme1_home_portfolio_path)}" %>

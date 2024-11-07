@@ -35,6 +35,22 @@ $(document).ready(function () {
         },
     });
 });
+$(document).ready(function () {
+    $(".owl-carousel.owl-carousel-header").owlCarousel({
+        loop: true,
+        margin: 70,
+        dots: false,
+        autoplay: true,
+        nav: false,
+        smartSpeed: 1000,
+        autoplayTimeout:4000,
+        responsive: {
+            0: {
+                items: 1,
+            },
+        },
+    });
+});
 
 function cancelFunction() {
     document.getElementById("applymodal").style.display = "none";
@@ -70,22 +86,3 @@ function mobileDropdownTwoOpen() {
       y.style.display = "none";
     }
 }
-
-function redirectToCareerDetail(jobId) {
-    const url = `/career_detail/${jobId}`;
-    window.location.href = url;
-}
-
-function applyForJob(jobId) {
-    $.ajax({
-      url: '/theme1/home/apply_for_job',
-      type: 'GET',
-      data: { job_id: jobId },
-      dataType: 'script',
-      success: function() {
-      },
-      error: function(xhr, status, error) {
-        console.error('AJAX Error: ', status, error);
-      }
-    });
-  }

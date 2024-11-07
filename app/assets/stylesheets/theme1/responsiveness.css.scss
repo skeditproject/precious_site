@@ -32,11 +32,14 @@
     .service-div > div{
         min-width: fit-content;
     }
-    .header-section video{
-        height: 70vh;
+    .header-section .homepage-banner-bg{
+        height: 60vh;
+    }
+    .homepage-side-img{
+        max-width: 400px;
     }
     .header-content-bold{
-        font-size: 36px;
+        font-size: 30px;
     }
     .team-div{
         min-width: 40%;
@@ -137,11 +140,17 @@
         margin-left: 0px;
         margin-right: 0px;
     }
-    .header-section video{
-        height: 40vh;
+    .header-section .homepage-banner-bg{
+        height: 60vh;
+    }
+    .inner-header-section{
+        flex-direction: column-reverse;
+    }
+    .homepage-side-img{
+        max-width: 300px;
     }
     .header-content{
-        font-size: 20px;
+        font-size: 18px;
     }
     .service-content{
         padding: 10px 10px 10px 5px;
@@ -217,6 +226,12 @@
     }
     .job-inner-section{
         max-width: 100%;
+    }
+}
+
+@media (max-width: 400px){
+    .header-section .homepage-banner-bg{
+        height: 80vh;
     }
 }
 
