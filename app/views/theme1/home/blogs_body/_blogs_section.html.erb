@@ -1,19 +1,3 @@
-<header class="header-section d-flex justify-content-center align-items-center position-relative">
-    <%= image_tag "theme1/modifyimg/banner_bg.jpg", class: "homepage-banner-bg", alt: "" %>
-    <div class="container inner-header-section position-absolute top-5 d-flex gap-3 align-items-center">
-        <div class="" style="flex: 1;">
-            <p class="header-content-bold wow animated slideInUp">Blogs</p>
-            <p class="fs-6 text-white mt-3 wow animated slideInUp">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas totam ab inventore architecto maiores quos! Debitis dolores qui laudantium molestias! ipsum dolor sit amet consec inventore architecto maiores quos! Debitis dolores qui laudantium molestias! ipsum dolor sit amet consec
-            </p>
-            <button class="custom-btn mt-sm-5 mt-4 wow animated slideInUp"><a class="text-decoration-none" href="#contactsection">Contact us</a></button>
-        </div>
-        <div style="flex: 1; text-align: center;">
-          <%= image_tag "theme1/precious/Blog page/blog main page.svg", class: "homepage-side-img", width: "100%", alt: "" %>
-        </div>
-    </div>
-</header>
-
 <section class="service-section position-relative" id="servicepart">
   <%= image_tag 'theme1/dot-shape-right-top.png', class: "position-absolute top-0 end-0", style: "z-index: -1; opacity: 0.4", alt: "" %>
   <div class="container mx-auto mb-3 mb-md-5 pt-5 pb-5">
@@ -25,15 +9,15 @@
     </p>
     <div class="service-div blog-service-div mt-5">
       <% blogs = [
-        { title: "Web Development", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path },
-        { title: "Android Development", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path },
-        { title: "Cloud Services", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path },
-        { title: "UI/UX Design", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path },
-        { title: "IT Consulting", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path },
-        { title: "Digital Marketing", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path }
+        { title: "Web Development", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path, animation: "slideInLeft" },
+        { title: "Android Development", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path, animation: "slideInDown" },
+        { title: "Cloud Services", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path, animation: "slideInRight" },
+        { title: "UI/UX Design", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path, animation: "slideInLeft" },
+        { title: "IT Consulting", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path, animation: "slideInUp" },
+        { title: "Digital Marketing", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path, animation: "slideInRight" }
       ] %>
       <% blogs.each do |blog| %>
-        <div class="d-flex gap-1 flex-column gap-sm-2 bg-white wow animated slideInUp">
+        <div class="d-flex gap-1 flex-column gap-sm-2 bg-white wow animated <%= blog[:animation] %>">
           <%= link_to image_tag(blog[:img], alt: "", height: "100%"), blog[:path] %>
           <div class="service-content">
             <div class="blog-time">
