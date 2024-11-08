@@ -170,8 +170,25 @@ a:hover{
     display: none;
 }
 
+.portfolio-detail-modal{
+    display: none;
+}
+
 .apply-modal-form{
     max-width: 600px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999;
+}
+
+.portfolio-modal-form{
+    max-width: 900px;
     background-color: white;
     border-radius: 12px;
     padding: 20px;
@@ -399,21 +416,23 @@ a:hover{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.service-div > div {
-    flex: 1;
-    min-width: 32%;
-    max-width: 49%;
-    width: 100%;
-    box-shadow: 0px 0px 5px #00000010;
-    border-radius: 8px;
-    transition: all 300ms linear;    
+    max-width: 900px;
+    margin: auto;
 }
 
 .blog-service-div{
     max-width: unset;
     margin: auto;
+}
+
+.service-div > div {
+    flex: 1;
+    min-width: 46%;
+    max-width: 49%;
+    width: 100%;
+    box-shadow: 0px 0px 5px #00000010;
+    border-radius: 8px;
+    transition: all 300ms linear;    
 }
 
 .blog-service-div > div {
@@ -430,8 +449,9 @@ a:hover{
 }
 
 .service-div > div img {
-    width: 124px;
-    object-fit: cover;
+    width: 150px;
+    object-fit: contain;
+    padding-inline: 12px;
     border-radius: 8px;
 }
 
@@ -501,6 +521,7 @@ a:hover{
     text-decoration: none;
     font-size: 12px;
     display: block;
+    color: #878787;
     text-align: end;
 }
 
@@ -1143,7 +1164,7 @@ a:hover{
 .inner-footer-div{
     z-index: 2;
     position: relative;
-    padding: 70px 0px 30px;
+    padding: 40px 0px 0px;
     border-bottom: 2px solid white;
 }
 
@@ -1151,6 +1172,7 @@ a:hover{
     z-index: 2;
     position: relative;
     color: white;
+    font-size: 12px;
 }
 
 .social-icon div{
@@ -1217,6 +1239,10 @@ a:hover{
     list-style: none;
 }
 
+.footer-links ul li{
+    font-size: 14px;
+}
+
 .footer-content{
     font-size: 14px;
     line-height: 1.2;
@@ -1228,7 +1254,7 @@ a:hover{
     color: white;
     text-decoration: none;
     font-weight: 400;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     display: inline-block;
     transition: all 300ms linear;
 }

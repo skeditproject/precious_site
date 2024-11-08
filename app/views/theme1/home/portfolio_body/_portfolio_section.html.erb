@@ -1,125 +1,111 @@
 <section class="container mx-auto portfolio-section mt-5 pt-5 mb-5">
   <p class="heading-text text-center wow animated slideInUp">Recent <span class="primary-color">Projects</span></p>
-  <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="web-dev" role="tabpanel" aria-labelledby="web-tab">
-          <div class="d-flex portfolio-img-parent-div justify-content-center gap-3 flex-wrap">
-              <div class="portfolio-img-div position-relative wow animated slideInUp">
-                  <div class="portfolio-content justify-content-between position-absolute">
-                      <p class="" style="font-size: 14px; font-weight: 700;">Lorem, ipsum dolor.</p>
-                      <button class="custom-btn mt-0 py-1 px-2">
-                          <a href="" class="text-decoration-none" style="font-size: 12px;">Visit Website</a>
-                      </button>
-                  </div>
-                  <%= image_tag "theme1/about-head.png", alt: "" %>
-              </div>
-              <div class="portfolio-img-div position-relative wow animated slideInUp">
-                  <div class="portfolio-content justify-content-between position-absolute">
-                      <p class="" style="font-size: 14px; font-weight: 700;">Lorem, ipsum dolor.</p>
-                      <button class="custom-btn mt-0 py-1 px-2">
-                          <a href="" class="text-decoration-none" style="font-size: 12px;">Visit Website</a>
-                      </button>
-                  </div>
-                  <%= image_tag "theme1/portfolio-head.png", alt: "" %>
-              </div>
-              <div class="portfolio-img-div position-relative wow animated slideInUp">
-                  <div class="portfolio-content justify-content-between position-absolute">
-                      <p class="" style="font-size: 14px; font-weight: 700;">Lorem, ipsum dolor.</p>
-                      <button class="custom-btn mt-0 py-1 px-2">
-                          <a href="" class="text-decoration-none" style="font-size: 12px;">Visit Website</a>
-                      </button>
-                  </div>
-                  <%= image_tag "theme1/career-head.png", alt: "" %>
-              </div>
-              <div class="portfolio-img-div position-relative wow animated slideInUp">
-                  <div class="portfolio-content justify-content-between position-absolute">
-                      <p class="" style="font-size: 14px; font-weight: 700;">Lorem, ipsum dolor.</p>
-                      <button class="custom-btn mt-0 py-1 px-2">
-                          <a href="" class="text-decoration-none" style="font-size: 12px;">Visit Website</a>
-                      </button>
-                  </div>
-                  <%= image_tag "theme1/feature-2.png", alt: "" %>
-              </div>
-              <div class="portfolio-img-div position-relative wow animated slideInUp">
-                  <div class="portfolio-content justify-content-between position-absolute">
-                      <p class="" style="font-size: 14px; font-weight: 700;">Lorem, ipsum dolor.</p>
-                      <button class="custom-btn mt-0 py-1 px-2">
-                          <a href="" class="text-decoration-none" style="font-size: 12px;">Visit Website</a>
-                      </button>
-                  </div>
-                  <%= image_tag "theme1/about.png", alt: "" %>
-              </div>
-              <div class="portfolio-img-div position-relative wow animated slideInUp">
-                  <div class="portfolio-content justify-content-between position-absolute">
-                      <p class="" style="font-size: 14px; font-weight: 700;">Lorem, ipsum dolor.</p>
-                      <button class="custom-btn mt-0 py-1 px-2">
-                          <a href="" class="text-decoration-none" style="font-size: 12px;">Visit Website</a>
-                      </button>
-                  </div>
-                  <%= image_tag "theme1/review.png", alt: "" %>
-              </div>
+  <div class="tab-content mt-5" id="myTabContent">
+    <div class="tab-pane fade show active" id="web-dev" role="tabpanel" aria-labelledby="web-tab">
+      <div class="d-flex portfolio-img-parent-div justify-content-center gap-3 flex-wrap">
+        <div class="portfolio-img-div position-relative wow animated slideInUp">
+          <div class="portfolio-content justify-content-between position-absolute">
+            <p style="font-size: 14px; font-weight: 700;">Lorem, ipsum dolor.</p>
+            <button class="custom-btn mt-0 py-1 px-2" onclick="applyPortfolioDetailModalOpen()">
+              <a class="text-decoration-none" style="font-size: 12px;">See More</a>
+            </button>
           </div>
-      </div>
-      <div class="tab-pane fade" id="mobile-dev" role="tabpanel" aria-labelledby="mobile-tab">
-          <div class="d-flex portfolio-img-parent-div justify-content-center gap-3 flex-wrap">
-              <div class="portfolio-img-div position-relative wow animated slideInUp">
-                  <div class="portfolio-content justify-content-between position-absolute">
-                      <p class="" style="font-size: 14px; font-weight: 700;">Lorem, ipsum dolor.</p>
-                      <button class="custom-btn mt-0 py-1 px-2">
-                          <a href="" class="text-decoration-none" style="font-size: 12px;">Visit Website</a>
-                      </button>
-                  </div>
-                  <%= image_tag "theme1/feature-2.png", alt: "" %>
-              </div>
-              <div class="portfolio-img-div position-relative wow animated slideInUp">
-                  <div class="portfolio-content justify-content-between position-absolute">
-                      <p class="" style="font-size: 14px; font-weight: 700;">Lorem, ipsum dolor.</p>
-                      <button class="custom-btn mt-0 py-1 px-2">
-                          <a href="" class="text-decoration-none" style="font-size: 12px;">Visit Website</a>
-                      </button>
-                  </div>
-                  <%= image_tag "theme1/about.png", alt: "" %>
-              </div>
-              <div class="portfolio-img-div position-relative wow animated slideInUp">
-                  <div class="portfolio-content justify-content-between position-absolute">
-                      <p class="" style="font-size: 14px; font-weight: 700;">Lorem, ipsum dolor.</p>
-                      <button class="custom-btn mt-0 py-1 px-2">
-                          <a href="" class="text-decoration-none" style="font-size: 12px;">Visit Website</a>
-                      </button>
-                  </div>
-                  <%= image_tag "theme1/review.png", alt: "" %>
-              </div>
+          <%= image_tag "theme1/about-head.png" , alt: "" %>
+        </div>
+
+        <div class="portfolio-img-div position-relative wow animated slideInUp">
+          <div class="portfolio-content justify-content-between position-absolute">
+            <p style="font-size: 14px; font-weight: 700;">Lorem, ipsum dolor.</p>
+            <button class="custom-btn mt-0 py-1 px-2" onclick="applyPortfolioDetailModalOpen()">
+              <a class="text-decoration-none" style="font-size: 12px;">See More</a>
+            </button>
           </div>
-      </div>
-      <div class="tab-pane fade" id="design-dev" role="tabpanel" aria-labelledby="design-tab">
-          <div class="d-flex portfolio-img-parent-div justify-content-center gap-3 flex-wrap">
-              <div class="portfolio-img-div position-relative wow animated slideInUp">
-                  <div class="portfolio-content justify-content-between position-absolute">
-                      <p class="" style="font-size: 14px; font-weight: 700;">Lorem, ipsum dolor.</p>
-                      <button class="custom-btn mt-0 py-1 px-2">
-                          <a href="" class="text-decoration-none" style="font-size: 12px;">Visit Website</a>
-                      </button>
-                  </div>
-                  <%= image_tag "theme1/about-head.png", alt: "" %>
-              </div>
-              <div class="portfolio-img-div position-relative wow animated slideInUp">
-                  <div class="portfolio-content justify-content-between position-absolute">
-                      <p class="" style="font-size: 14px; font-weight: 700;">Lorem, ipsum dolor.</p>
-                      <button class="custom-btn mt-0 py-1 px-2">
-                          <a href="" class="text-decoration-none" style="font-size: 12px;">Visit Website</a>
-                      </button>
-                  </div>
-                  <%= image_tag "theme1/portfolio-head.png", alt: "" %>
-              </div>
-              <div class="portfolio-img-div position-relative wow animated slideInUp">
-                  <div class="portfolio-content justify-content-between position-absolute">
-                      <p class="" style="font-size: 14px; font-weight: 700;">Lorem, ipsum dolor.</p>
-                      <button class="custom-btn mt-0 py-1 px-2">
-                          <a href="" class="text-decoration-none" style="font-size: 12px;">Visit Website</a>
-                      </button>
-                  </div>
-                  <%= image_tag "theme1/career-head.png", alt: "" %>
-              </div>
+          <%= image_tag "theme1/portfolio-head.png" , alt: "" %>
+        </div>
+
+        <div class="portfolio-img-div position-relative wow animated slideInUp">
+          <div class="portfolio-content justify-content-between position-absolute">
+            <p style="font-size: 14px; font-weight: 700;">Lorem, ipsum dolor.</p>
+            <button class="custom-btn mt-0 py-1 px-2" onclick="applyPortfolioDetailModalOpen()">
+              <a class="text-decoration-none" style="font-size: 12px;">See More</a>
+            </button>
           </div>
+          <%= image_tag "theme1/career-head.png" , alt: "" %>
+        </div>
+
+        <div class="portfolio-img-div position-relative wow animated slideInUp">
+          <div class="portfolio-content justify-content-between position-absolute">
+            <p style="font-size: 14px; font-weight: 700;">Lorem, ipsum dolor.</p>
+            <button class="custom-btn mt-0 py-1 px-2" onclick="applyPortfolioDetailModalOpen()">
+              <a class="text-decoration-none" style="font-size: 12px;">See More</a>
+            </button>
+          </div>
+          <%= image_tag "theme1/feature-2.png" , alt: "" %>
+        </div>
+
+        <div class="portfolio-img-div position-relative wow animated slideInUp">
+          <div class="portfolio-content justify-content-between position-absolute">
+            <p style="font-size: 14px; font-weight: 700;">Lorem, ipsum dolor.</p>
+            <button class="custom-btn mt-0 py-1 px-2" onclick="applyPortfolioDetailModalOpen()">
+              <a class="text-decoration-none" style="font-size: 12px;">See More</a>
+            </button>
+          </div>
+          <%= image_tag "theme1/about.png" , alt: "" %>
+        </div>
+
+        <div class="portfolio-img-div position-relative wow animated slideInUp">
+          <div class="portfolio-content justify-content-between position-absolute">
+            <p style="font-size: 14px; font-weight: 700;">Lorem, ipsum dolor.</p>
+            <button class="custom-btn mt-0 py-1 px-2" onclick="applyPortfolioDetailModalOpen()">
+              <a class="text-decoration-none" style="font-size: 12px;">See More</a>
+            </button>
+          </div>
+          <%= image_tag "theme1/review.png" , alt: "" %>
+        </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio-detail-modal" id="portfoliodetailmodal">
+  <div class="applysection-overlay"></div>
+  <div class="portfolio-modal-form">
+    <div class="d-flex flex-column position-relative">
+      <p class="cancel-icon" onclick="cancelPortfolioDetailFunction()">X</p>
+      <h3 class="fw-bold text-center mt-3 mb-2">
+        Company Name
+      </h3>
+      <h6 class="fw-bold text-center mb-5">
+        <a class="text-decoration-none"
+          style="color: gray; font-weight: 400; font-size: 14px;">www.bjhdgdgajdcas.com</a>
+      </h6>
+      <div style="max-height: 450px; overflow: auto; padding-inline: 12px;">
+        <div class="d-flex gap-2 justify-content-between">
+          <%= image_tag "theme1/web-dev.png", style: "border-radius: 12px; box-shadow: 0px 0px 5px lightgray; height: 220px; width: 100%; max-width: 32%; object-fit: cover;", alt: "" %>
+          <%= image_tag "theme1/web-dev.png", style: "border-radius: 12px; box-shadow: 0px 0px 5px lightgray; height: 220px; width: 100%; max-width: 32%; object-fit: cover;", alt: "" %>
+          <%= image_tag "theme1/web-dev.png", style: "border-radius: 12px; box-shadow: 0px 0px 5px lightgray; height: 220px; width: 100%; max-width: 32%; object-fit: cover;", alt: "" %>
+        </div>        
+        <div class="text-center mt-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, repudiandae exercitationem nostrum repellat
+          maiores temporibus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sapiente obcaecati unde
+          aliquam quod? Quos minus quaerat enim error aperiam mollitia quo quas recusandae sed? <br> <br> Animi commodi
+          unde porro alias? Perferendis, praesentium dolorem deserunt assumenda, fuga aspernatur consequatur sequi optio
+          repellat facilis autem sapiente, tempora modi magni error dolorum saepe!
+        </div>
+        <div class="text-center mt-3">
+          <div>
+            <h6 class="fw-bold text-center mt-5">
+              Technologies We Use:
+            </h6>
+            <ul class="d-flex gap-5 justify-content-center mt-3">
+              <li>React</li>
+              <li>React</li>
+              <li>React</li>
+              <li>React</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

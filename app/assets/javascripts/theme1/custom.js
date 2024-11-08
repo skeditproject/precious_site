@@ -65,9 +65,18 @@ function cancelDetailFunction() {
     document.getElementById("applydetailmodal").style.display = "none";
 }
 
+function cancelPortfolioDetailFunction() {
+    document.getElementById("portfoliodetailmodal").style.display = "none";
+}
+
 function applyDetailModalOpen() {
     document.getElementById("applydetailmodal").style.display = "block";
 }
+
+function applyPortfolioDetailModalOpen() {
+    document.getElementById("portfoliodetailmodal").style.display = "block";
+}
+
 
 function mobileDropdownFirstOpen() {
     var x = document.getElementById("dropdownOne");
