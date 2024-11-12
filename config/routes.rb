@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     get 'faq'
     # get 'our_process'
     get 'services'
-    # get 'service_detail'
+    get 'contact_section'
     get 'service_detail/:tab', to: 'home#service_detail', as: 'service_detail'
     get 'hire_us'
     get 'blogs'
