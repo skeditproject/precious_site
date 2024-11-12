@@ -1,135 +1,121 @@
 <section class="technology-section">
-        <div class="technology-inner-div position-relative">
-            <%= image_tag 'theme1/technology-bg.png', class: "position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100", alt: '' %>
-            <div class="container">
-                <h5 class="heading-text text-white mb-3 text-center wow animated zoomIn">
-                    Technology <span class="primary-color">We Use</span>
-                </h5>
-                <p class="text-center my-4 mb-5 text-white wow animated zoomIn" style="max-width: 750px; margin: auto; line-height: 1.4; font-size: 14px;">
-                    Explore the advanced technologies we leverage to deliver cutting-edge solutions. From the latest programming languages and frameworks to cloud computing and AI, we harness a diverse tech stack to create innovative, and efficient software. Discover how our technological expertise can elevate your business to the next level.
-                </p>
-                <div class="d-flex flex-sm-row flex-column w-100 gap-5 gap-sm-3">
-                    <div class="owl-carousel owl-carousel-technology owl-theme d-flex wow animated slideInUp">
-                        <!-- <div class="item position-relative">
-                            <a href="">
-                                <%= image_tag 'theme1/reactjs.png', style: "object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;", alt: '' %>
-                            </a>
-                            <a href="" class="d-block text-decoration-none text-dark fs-5 fw-bold">
-                                React Js
-                            </a>
-                            <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
-                                Lorem ipsum dolor
-                            </p>
-                        </div> -->
-                        <div class="item position-relative">
-                            <a href="<%= theme1_home_technology_path(language: 'reactjs') %>">
-                              <%= image_tag 'theme1/reactjs.png', style: "object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;", alt: 'React Js' %>
-                            </a>
-                            <a href="<%= theme1_home_technology_path(language: 'reactjs') %>" class="d-block text-decoration-none text-dark fs-5 fw-bold">
-                              React Js
-                            </a>
-                            <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
-                              Lorem ipsum dolor
-                            </p>
-                          </div>                          
-                        <div class="item position-relative">
-                            <a href="">
-                                <%= image_tag 'theme1/nodejs.png', style: "object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;", alt: '' %>
-                                <%# <img src="assets/images/nodejs.png" style="object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;" alt=""> %>
-                            </a>
-                            <a href="" class="d-block text-decoration-none text-dark fs-5 fw-bold">
-                                Node Js
-                            </a>
-                            <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
-                                Lorem ipsum dolor
-                            </p>
-                        </div>
-                        <div class="item position-relative">
-                            <a href="">
-                                <%= image_tag 'theme1/ror.png', style: "object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;", alt: '' %>
-                                <%# <img src="assets/images/ror.png" style="object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;" alt=""> %>
-                            </a>
-                            <a href="" class="d-block text-decoration-none text-dark fs-5 fw-bold">
-                                ROR
-                            </a>
-                            <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
-                                Lorem ipsum dolor
-                            </p>
-                        </div>
-                        <div class="item position-relative">
-                            <a href="">
-                                <%= image_tag 'theme1/python.png', style: "object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;", alt: '' %>
-                                <%# <img src="assets/images/python.png" style="object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;" alt=""> %>
-                            </a>
-                            <a href="" class="d-block text-decoration-none text-dark fs-5 fw-bold">
-                                Python
-                            </a>
-                            <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
-                                Lorem ipsum dolor
-                            </p>
-                        </div>
-                        <div class="item position-relative">
-                            <a href="">
-                                <%= image_tag 'theme1/php.png', style: "object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;", alt: '' %>
-                                <%# <img src="assets/images/php.png" style="object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;" alt=""> %>
-                            </a>
-                            <a href="" class="d-block text-decoration-none text-dark fs-5 fw-bold">
-                                PHP
-                            </a>
-                            <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
-                                Lorem ipsum dolor
-                            </p>
-                        </div>
-                        <div class="item position-relative">
-                            <a href="">
-                                <%= image_tag 'theme1/java.png', style: "object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;", alt: '' %>
-                                <%# <img src="assets/images/java.png" style="object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;" alt=""> %>
-                            </a>
-                            <a href="" class="d-block text-decoration-none text-dark fs-5 fw-bold">
-                                Java
-                            </a>
-                            <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
-                                Lorem ipsum dolor
-                            </p>
-                        </div>
-                        <div class="item position-relative">
-                            <a href="">
-                                <%= image_tag 'theme1/android.png', style: "object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;", alt: '' %>
-                                <%# <img src="assets/images/android.png" style="object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;" alt=""> %>
-                            </a>
-                            <a href="" class="d-block text-decoration-none text-dark fs-5 fw-bold">
-                                Android
-                            </a>
-                            <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
-                                Lorem ipsum dolor
-                            </p>
-                        </div>
-                        <div class="item position-relative">
-                            <a href="">
-                                <%= image_tag 'theme1/figma.png', style: "object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;", alt: '' %>
-                                <%# <img src="assets/images/figma.png" style="object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;" alt=""> %>
-                            </a>
-                            <a href="" class="d-block text-decoration-none text-dark fs-5 fw-bold">
-                                Figma
-                            </a>
-                            <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
-                                Lorem ipsum dolor
-                            </p>
-                        </div>
-                        <div class="item position-relative">
-                            <a href="">
-                                <%= image_tag 'theme1/azure.png', style: "object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;", alt: '' %>
-                                <%# <img src="assets/images/azure.png" style="object-fit: cover; width: 100px !important; margin-bottom: 12px; border-radius: 16px;" alt=""> %>
-                            </a>
-                            <a href="" class="d-block text-decoration-none text-dark fs-5 fw-bold">
-                                Azure
-                            </a>
-                            <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
-                                Lorem ipsum dolor
-                            </p>
-                        </div>
-                    </div>
-                </div>
+  <div class="technology-inner-div position-relative">
+    <%= image_tag 'theme1/technology-bg.png' , class: "position-absolute top-0 start-0 end-0 bottom-0 w-100 h-100"
+      ,style: "object-fit: cover;" , alt: '' %>
+      <div class="container">
+        <h5 class="heading-text text-white mb-3 text-center wow animated zoomIn">
+          Technology <span class="primary-color">We Use</span>
+        </h5>
+        <p class="text-center my-4 mb-5 text-white wow animated zoomIn"
+          style="max-width: 750px; margin: auto; line-height: 1.4; font-size: 14px;">
+          We deliver high-performance website resolutions based on the most recent technologies to worldwide clients to
+          give the best probable functionalities to their website. Following are the famous website development
+          technologies we hold expertise in PHP, Python, Java, Azure, Figma, etc.
+        </p>
+        <div class="d-flex flex-sm-row flex-column w-100 gap-5 gap-sm-3">
+          <div class="owl-carousel owl-carousel-technology owl-theme d-flex wow animated slideInUp">
+            <div class="item position-relative">
+              <a href="<%= theme1_home_technology_path(language: 'reactjs') %>">
+                <%= image_tag 'theme1/reactjs.png' ,class: "technology-icon" , alt: '' %>
+              </a>
+              <a href="<%= theme1_home_technology_path(language: 'reactjs') %>"
+                class="d-block text-decoration-none text-dark fs-5 fw-bold">
+                React Js
+              </a>
+              <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
+                Lorem ipsum dolor
+              </p>
             </div>
+            <div class="item position-relative">
+              <a href="">
+                <%= image_tag 'theme1/nodejs.png' ,class: "technology-icon" , alt: '' %>
+              </a>
+              <a href="" class="d-block text-decoration-none text-dark fs-5 fw-bold">
+                Node Js
+              </a>
+              <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
+                Lorem ipsum dolor
+              </p>
+            </div>
+            <div class="item position-relative">
+              <a href="">
+                <%= image_tag 'theme1/ror.png' , class: "technology-icon" , alt: '' %>
+              </a>
+              <a href="" class="d-block text-decoration-none text-dark fs-5 fw-bold">
+                ROR
+              </a>
+              <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
+                Lorem ipsum dolor
+              </p>
+            </div>
+            <div class="item position-relative">
+              <a href="">
+                <%= image_tag 'theme1/python.png' ,class: "technology-icon" , alt: '' %>
+              </a>
+              <a href="" class="d-block text-decoration-none text-dark fs-5 fw-bold">
+                Python
+              </a>
+              <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
+                Lorem ipsum dolor
+              </p>
+            </div>
+            <div class="item position-relative">
+              <a href="">
+                <%= image_tag 'theme1/php.png' , class: "technology-icon" , alt: '' %>
+              </a>
+              <a href="" class="d-block text-decoration-none text-dark fs-5 fw-bold">
+                PHP
+              </a>
+              <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
+                Lorem ipsum dolor
+              </p>
+            </div>
+            <div class="item position-relative">
+              <a href="">
+                <%= image_tag 'theme1/java.png' , class: "technology-icon" , alt: '' %>
+              </a>
+              <a href="" class="d-block text-decoration-none text-dark fs-5 fw-bold">
+                Java
+              </a>
+              <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
+                Lorem ipsum dolor
+              </p>
+            </div>
+            <div class="item position-relative">
+              <a href="">
+                <%= image_tag 'theme1/android.png' , class: "technology-icon" , alt: '' %>
+              </a>
+              <a href="" class="d-block text-decoration-none text-dark fs-5 fw-bold">
+                Android
+              </a>
+              <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
+                Lorem ipsum dolor
+              </p>
+            </div>
+            <div class="item position-relative">
+              <a href="">
+                <%= image_tag 'theme1/figma.png' , class: "technology-icon" , alt: '' %>
+              </a>
+              <a href="" class="d-block text-decoration-none text-dark fs-5 fw-bold">
+                Figma
+              </a>
+              <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
+                Lorem ipsum dolor
+              </p>
+            </div>
+            <div class="item position-relative">
+              <a href="">
+                <%= image_tag 'theme1/azure.png' , class: "technology-icon" , alt: '' %>
+              </a>
+              <a href="" class="d-block text-decoration-none text-dark fs-5 fw-bold">
+                Azure
+              </a>
+              <p class="text-black-50 mt-2 px-3" style="font-size: 12px;">
+                Lorem ipsum dolor
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+  </div>
+</section>
