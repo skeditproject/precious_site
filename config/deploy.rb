@@ -14,7 +14,6 @@ set :use_sudo,        false
 set :deploy_via,      :remote_cache
 set :deploy_to,       "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 set :puma_bind,       "unix://#{shared_path}/tmp/sockets/#{fetch(:application)}-puma.sock"
-set :puma_conf, "#{shared_path}/puma.rb"  
 set :puma_state,      "#{shared_path}/tmp/pids/puma.state"
 set :rvm_ruby_version, '3.2.2'
 set :puma_pid,        "#{shared_path}/tmp/pids/puma.pid"
@@ -28,6 +27,10 @@ set :puma_worker_timeout, 120
 set :puma_init_active_record, true  # Change to false when not using ActiveRecord
 set :rails_env, "production"
 set :assets_dependencies, %w(app/assets lib/assets vendor/assets Gemfile.lock config/routes.rb)
+set :nginx_server_name, "www.preciousinfosystem.com preciousinfosystem.com"
+set :nginx_use_ssl, true
+set :nginx_ssl_certificate, "/etc/letsencrypt/live/preciousinfosystem.com/fullchain.pem"
+set :nginx_ssl_certificate_key, "/etc/letsencrypt/live/preciousinfosystem.com/privkey.pem"
 
 #set :puma_enable_socket_service, true
 ## Defaults:
@@ -40,6 +43,7 @@ set :keep_releases, 2
 ## Linked Files & Directories (Default None):
 # set :linked_files, %w{config/database.yml}
 # set :linked_dirs,  %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+append :linked_dirs, 'log', 'tmp/pids', 'tmp/sockets'
 
 set :linked_files, %w{config/master.key config/database.yml}
 append :linked_dirs, 'log', 'storage', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads', 'node_modules'
