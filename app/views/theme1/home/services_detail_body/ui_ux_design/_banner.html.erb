@@ -6,8 +6,7 @@
       <p class="fs-6 text-white mt-3 wow animated slideInUp">
         To succeed in any digital product or service, it is essential to have UX/UI design. With UX/UI design, the focus lies on enhancing the whole user experience by making the interface well-organized, instinctive, and visually tempting.  Having a good UX/UI design will not only improve user approval but will also boost engagement and conversion rates.
       </p>
-      <button class="custom-btn mt-sm-5 mt-4 wow animated slideInUp"><a class="text-decoration-none"
-          href="#contactsection">Contact us</a></button>
+      <%= button_to "Contact us" , theme1_home_contact_section_path,method: :get, class: "custom-btn mt-sm-5 mt-4 wow animated slideInUp text-decoration-none" %>
     </div>
     <div style="flex: 1; text-align: center;">
       <%= image_tag 'theme1/precious/Service page/graphic (serice page).svg', class: 'homepage-side-img', width: '100%', alt: '', style: 'max-width: 600px;' %>

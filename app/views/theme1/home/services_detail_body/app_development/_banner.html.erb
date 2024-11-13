@@ -6,8 +6,7 @@
         <p class="fs-6 text-white mt-3 wow animated slideInUp">
           App development services refer to the formation of software applications that are designed to operate on the mobile devices, such as smartphones and tablets. The procedure of creating these apps, more often than not, includes creating a user interface and design, coding the logic of the app, testing the app, and then making it accessible for download all the way through an App Store or Google Play.
         </p>
-        <button class="custom-btn mt-sm-5 mt-4 wow animated slideInUp"><a class="text-decoration-none"
-            href="#contactsection">Contact us</a></button>
+        <%= button_to "Contact us" , theme1_home_contact_section_path,method: :get, class: "custom-btn mt-sm-5 mt-4 wow animated slideInUp text-decoration-none" %>
       </div>
       <div style="flex: 1; text-align: center;">
         <%= image_tag 'theme1/precious/Service page/app development(services).svg' , class: 'homepage-side-img' ,

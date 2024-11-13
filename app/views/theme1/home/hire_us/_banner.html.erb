@@ -6,7 +6,7 @@
           <p class="fs-6 text-white mt-3 wow animated slideInUp">
             Hire us for future-ready resolutions at 50% cost savings and 2x quicker delivery. At Precious Infosystem, we assure you 100 percent work approval. Bring your web application idea to life and augment your existing project. Take into service of our developers to build strong and scalable web applications tailored to your distinctive business needs. 
           </p>
-          <button class="custom-btn mt-sm-5 mt-4 wow animated slideInUp"><a class="text-decoration-none" href="#contactsection">Contact us</a></button>
+          <%= button_to "Contact us" , theme1_home_contact_section_path,method: :get, class: "custom-btn mt-sm-5 mt-4 wow animated slideInUp text-decoration-none" %>
       </div>
       <div style="flex: 1; text-align: center;">
         <%= image_tag "theme1/precious/Hire page/main banner hire page.svg", class: "homepage-side-img", width: "100%", alt: "" %>

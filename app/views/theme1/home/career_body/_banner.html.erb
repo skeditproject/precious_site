@@ -6,7 +6,7 @@
             <p class="fs-6 text-white mt-3 wow animated slideInUp">
               Become a part of our keen and fervent team of skilled proficients that are dedicated to producing outstanding results each day with a true zeal and keenness.
             </p>
-            <button class="custom-btn mt-4 mt-sm-5 wow animated zoomIn" style="z-index: 9;" onclick="applyModalOpen()">Apply for Job</button>
+            <%= button_to "Apply for Job", "https://www.skedgroup.in/career", method: :get, class: "custom-btn mt-4 mt-sm-5 wow animated zoomIn", style: "z-index: 9;" %>
         </div>
         <div style="flex: 1; text-align: center;">
           <%= image_tag "theme1/precious/Career/career banner main page.svg", class: "homepage-side-img", width: "100%", alt: "", style: "max-width: 650px;" %>

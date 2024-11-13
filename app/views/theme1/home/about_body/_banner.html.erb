@@ -4,9 +4,9 @@
         <div class="" style="flex: 1;">
             <p class="header-content-bold wow animated slideInUp">About Us</p>
             <p class="fs-6 text-white mt-3 wow animated slideInUp">
-                Simplifying digital makeover to give power to businesses of all sizes
+              Simplifying digital makeover to give power to businesses of all sizes
             </p>
-            <button class="custom-btn mt-sm-5 mt-4 wow animated slideInUp"><a class="text-decoration-none" href="#contactsection">Contact us</a></button>
+            <%= button_to "Contact us" , theme1_home_contact_section_path,method: :get, class: "custom-btn mt-sm-5 mt-4 wow animated slideInUp text-decoration-none" %>
         </div>
         <div style="flex: 1; text-align: center;">
           <%= image_tag "theme1/precious/About page/About page main banner.svg", class: "homepage-side-img", width: "100%", alt: "" %>
