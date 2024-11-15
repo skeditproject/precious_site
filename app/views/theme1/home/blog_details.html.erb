@@ -1,2 +1,14 @@
-<%= render 'theme1/home/blog_detail_body/banner' %>
-<%= render 'theme1/home/blog_detail_body/blog_detail_section' %>
+<div class="service-detail-content">
+  <% case @tab %>
+  <% when 'top_5_reasons_hiring_custom_software_development' %>
+    <%= render 'theme1/home/blog_detail_body/blog1' %>
+  <% when 'how_ai_will_reshape_the_industry' %>
+    <%= render 'theme1/home/blog_detail_body/blog2' %>
+  <% when 'software_engineering_development_guide' %>
+    <%= render 'theme1/home/blog_detail_body/blog3' %>
+  <% when 'ruby_on_rails_developer_guidelines' %>
+    <%= render 'theme1/home/blog_detail_body/blog4' %>
+  <% else %>
+    <%= render 'theme1/home/blog_detail_body/blog1' %>
+  <% end %>
+</div>

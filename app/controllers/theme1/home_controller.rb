@@ -16,9 +16,16 @@ class Theme1::HomeController < ApplicationController
   def contact_section
   end
 
+  def contact_inquiry
+    ContactMailer.contact_inquiry_email(contact_inquiry_params).deliver_now
+    redirect_to theme1_home_contact_section_path
+  end
+
   def blogs; end
 
-  def blog_details; end
+  def blog_details
+  @tab = params[:tab]
+  end
 
   def technology
     @language = params[:language]
@@ -55,6 +62,17 @@ class Theme1::HomeController < ApplicationController
   end
 
   private
+
+  def contact_inquiry_params
+    {
+      fullname: params[:fullname],
+      subject: params[:subject],
+      email: params[:email],
+      phone: params[:phone],
+      message: params[:message]
+    }
+  end
+
 
   def set_vacancies
     @vacancies = fetch_api_data('vacancies') || []

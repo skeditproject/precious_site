@@ -12,12 +12,12 @@
     </p>
     <div class="service-div blog-service-div mt-5">
       <% blogs = [
-        { title: "Web Development", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path, animation: "slideInLeft" },
-        { title: "Android Development", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path, animation: "slideInDown" },
-        { title: "Cloud Services", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path, animation: "slideInRight" },
-        { title: "UI/UX Design", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path, animation: "slideInLeft" },
-        { title: "IT Consulting", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path, animation: "slideInUp" },
-        { title: "Digital Marketing", img: "theme1/about.png", date: "02 Aug 2024, By Admin", content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, deleniti!", path: theme1_home_blog_details_path, animation: "slideInRight" }
+        { title: "The Top 5 reasons you should consider hiring Custom Software Development Company", img: "theme1/blog1.jpg", date: "02 Aug 2024, By Admin", content: "In the fast-paced digital age, businesses are constantly seeking ways to gain a competitive edge and streamline their operations.", path: theme1_home_blog_details_path('top_5_reasons_hiring_custom_software_development'), animation: "slideInLeft" },
+        { title: "The Future of Software Development: How AI Will Reshape the Industry", img: "theme1/blog2.jpeg", date: "02 Aug 2024, By Admin", content: "How AI Will Reshape the Industry", path: theme1_home_blog_details_path('how_ai_will_reshape_the_industry'), animation: "slideInDown" },
+        { title: "From Idea to Reality: A Guide to the Software Engineering Development Process", img: "theme1/blog3.webp", date: "02 Aug 2024, By Admin", content: "A Guide to the Software Engineering Development Process", path: theme1_home_blog_details_path('software_engineering_development_guide'), animation: "slideInRight" },
+        { title: "Essential Guidelines for Hiring the Perfect Ruby on Rails Software Developer: A Comprehensive Top 10 Checklist", img: "theme1/blog4.png", date: "02 Aug 2024, By Admin", content: "Essential Guidelines for Hiring the Perfect Ruby on Rails Software Developer: A Comprehensive Top 10 Checklist", path: theme1_home_blog_details_path('ruby_on_rails_developer_guidelines'), animation: "slideInLeft" },
+        { title: "IT Consulting", img: "theme1/blog1.jpg", date: "02 Aug 2024, By Admin", content: "", path: theme1_home_blog_details_path('ruby_on_rails_developer_guidelines'), animation: "slideInUp" },
+        { title: "Digital Marketing", img: "theme1/digital-marketing.jpeg", date: "02 Aug 2024, By Admin", content: "", path: theme1_home_blog_details_path('ruby_on_rails_developer_guidelines'), animation: "slideInRight" }
       ] %>
       <% blogs.each do |blog| %>
         <div class="d-flex gap-1 flex-column gap-sm-2 bg-white wow animated <%= blog[:animation] %>">
