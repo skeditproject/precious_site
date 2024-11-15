@@ -78,6 +78,41 @@ function applyPortfolioDetailModalOpen() {
 }
 
 
+function cancelhealthCareModelOpen() {
+    document.getElementById("healthcaremodel").style.display = "none";
+}
+function healthCareModelOpen() {
+    document.getElementById("healthcaremodel").style.display = "block";
+}
+
+function cancelOnlineEducationModelOpen() {
+    document.getElementById("onlineeducationsystem").style.display = "none";
+}
+function onlineEducationModelOpen() {
+    document.getElementById("onlineeducationsystem").style.display = "block";
+}
+
+function cancelHotemManagementModel() {
+    document.getElementById("hotemanagementsystem").style.display = "none";
+}
+function hotelManagementModelOpen() {
+    document.getElementById("hotemanagementsystem").style.display = "block";
+}
+
+function cancelTravellingSystemModel() {
+    document.getElementById("travellingsystem").style.display = "none";
+}
+function travellingSystemModelOpen() {
+    document.getElementById("travellingsystem").style.display = "block";
+}
+
+function canceldigitalmarketingModelOpen() {
+    document.getElementById("digitalmarketingsystem").style.display = "none";
+}
+function digitalMarketingModelOpen() {
+    document.getElementById("digitalmarketingsystem").style.display = "block";
+}
+
 function mobileDropdownFirstOpen() {
     var x = document.getElementById("dropdownOne");
     if (x.style.display === "none") {
