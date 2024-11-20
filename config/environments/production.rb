@@ -94,7 +94,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address:              'smtp-relay.brevo.com',
     port:                 587,
-    domain:               'codiatic.com',
+    domain:               'preciousinfosystem.com',
     user_name:            'nitin@codiatic.com',
     password:             'WE4AbsjP3ZxOMydL',
     authentication:       'plain'
