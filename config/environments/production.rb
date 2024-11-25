@@ -95,8 +95,8 @@ Rails.application.configure do
     address:              'smtp-relay.brevo.com',
     port:                 587,
     domain:               'preciousinfosystem.com',
-    user_name:            'nitin@codiatic.com',
-    password:             'WE4AbsjP3ZxOMydL',
+    user_name:            'ritesh@preciousinfosystem.com',
+    password:             'U6QD35E4YLrfzx9n',
     authentication:       'plain'
   }
 
