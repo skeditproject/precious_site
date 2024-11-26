@@ -95,9 +95,11 @@ Rails.application.configure do
     address:              'smtp-relay.brevo.com',
     port:                 587,
     domain:               'preciousinfosystem.com',
-    user_name:            'ritesh@preciousinfosystem.com',
-    password:             'U6QD35E4YLrfzx9n',
-    authentication:       'plain'
+    user_name:            'nitin@codiatic.com',
+    password:             'WE4AbsjP3ZxOMydL',
+    authentication:       'plain',
+    enable_starttls_auto: true,
+    openssl_verify_mode:  'none'
   }
 
   # Enable DNS rebinding protection and other `Host` header attacks.

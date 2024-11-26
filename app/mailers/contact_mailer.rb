@@ -6,6 +6,6 @@ class ContactMailer < ApplicationMailer
     @email = contact_inquiry_params[:email]
     @phone = contact_inquiry_params[:phone]
 
-    mail(to: "contact@preciousinfosystem.com", subject: "New Contact Inquiry from #{@fullname}")
+    mail(to: "kartik.patidar@skedgroup.in", subject: "New Contact Inquiry from #{@fullname}")
   end
 end
