@@ -12,12 +12,12 @@
     </p>
     <div class="service-div blog-service-div mt-5">
       <% blogs = [
-        { title: "The Top 5 reasons you should consider hiring Custom Software Development Company", img: "theme1/blog1.jpg", date: "02 Aug 2024, By Admin", content: "In the fast-paced digital age, businesses are constantly seeking ways to gain a competitive edge and streamline their operations.", path: theme1_home_blog_details_path('top_5_reasons_hiring_custom_software_development'), animation: "slideInLeft" },
-        { title: "The Future of Software Development: How AI Will Reshape the Industry", img: "theme1/blog2.jpeg", date: "02 Aug 2024, By Admin", content: "How AI Will Reshape the Industry", path: theme1_home_blog_details_path('how_ai_will_reshape_the_industry'), animation: "slideInDown" },
-        { title: "From Idea to Reality: A Guide to the Software Engineering Development Process", img: "theme1/blog3.webp", date: "02 Aug 2024, By Admin", content: "A Guide to the Software Engineering Development Process", path: theme1_home_blog_details_path('software_engineering_development_guide'), animation: "slideInRight" },
-        { title: "Essential Guidelines for Hiring the Perfect Ruby on Rails Software Developer: A Comprehensive Top 10 Checklist", img: "theme1/blog4.png", date: "02 Aug 2024, By Admin", content: "Essential Guidelines for Hiring the Perfect Ruby on Rails Software Developer: A Comprehensive Top 10 Checklist", path: theme1_home_blog_details_path('ruby_on_rails_developer_guidelines'), animation: "slideInLeft" },
-        { title: "IT Consulting", img: "theme1/blog1.jpg", date: "02 Aug 2024, By Admin", content: "", path: theme1_home_blog_details_path('ruby_on_rails_developer_guidelines'), animation: "slideInUp" },
-        { title: "Digital Marketing", img: "theme1/digital-marketing.jpeg", date: "02 Aug 2024, By Admin", content: "", path: theme1_home_blog_details_path('ruby_on_rails_developer_guidelines'), animation: "slideInRight" }
+        { title: "The Top 5 reasons you should consider hiring Custom Software Development Company", img: "theme1/blog1.png", date: "02 Aug 2024, By Admin", content: "The Top 5 reasons you should consider hiring Custom Software Development Company", path: theme1_home_blog_details_path('top_5_reasons_hiring_custom_software_development'), animation: "slideInLeft" },
+        { title: "How do you think Artificial Intelligence (AI) will impact the future of software development?", img: "theme1/blog2.jpeg", date: "02 Aug 2024, By Admin", content: "", path: theme1_home_blog_details_path('how_ai_will_reshape_the_industry'), animation: "slideInDown" },
+        { title: "A Guide to the Software Engineering Development Process", img: "theme1/blog3.avif", date: "02 Aug 2024, By Admin", content: "", path: theme1_home_blog_details_path('software_engineering_development_guide'), animation: "slideInRight" },
+        { title: "Essential Guidelines for Hiring the Perfect Ruby on Rails Software Developer: A Comprehensive Top 10 Checklist", img: "theme1/blog4.webp", date: "02 Aug 2024, By Admin", content: "Essential Guidelines for Hiring the Perfect Ruby on Rails Software Developer: A Comprehensive Top 10 Checklist", path: theme1_home_blog_details_path('ruby_on_rails_developer_guidelines'), animation: "slideInLeft" },
+        { title: "What specific aspects of your User Experience (UX) would you like to improve using Artificial Intelligence (AI)?.", img: "theme1/blog5.webp", date: "02 Aug 2024, By Admin", content: "User Experience (UX) is at the core of successful digital products, and Artificial Intelligence (AI) is revolutionizing how companies create intuitive, engaging, and personalized experiences.", path: theme1_home_blog_details_path('use_ai_to_improve_ux'), animation: "slideInUp" },
+        { title: "Why has Digital Marketing grown to be this huge compared to offline marketing?", img: "theme1/blog6.webp", date: "02 Aug 2024, By Admin", content: "digital marketing refers to advertising that appears on a computer, phone, tablet, or another type of electronic device. Online video, display ads, SEO, paid social ads, and social media posts ", path: theme1_home_blog_details_path('ruby_on_rails_developer_guidelines'), animation: "slideInRight" }
       ] %>
       <% blogs.each do |blog| %>
         <div class="d-flex gap-1 flex-column gap-sm-2 bg-white wow animated <%= blog[:animation] %>">
@@ -35,7 +35,7 @@
         </div>
       <% end %>
     </div>
-    <nav aria-label="Page navigation" class="d-flex justify-content-center mt-5 wow animated slideInUp">
+    <%# <nav aria-label="Page navigation" class="d-flex justify-content-center mt-5 wow animated slideInUp">
       <ul class="pagination mb-0">
         <li class="page-item disabled">
           <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Pre</a>
@@ -49,6 +49,6 @@
           <a class="page-link" href="#">Next</a>
         </li>
       </ul>
-    </nav>
+    </nav> %>
   </div>
 </section>
